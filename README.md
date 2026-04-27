@@ -7,15 +7,15 @@
 ## Inputs
 
 - **Width** (number)
-- **Thickness** (undefined)
-- **Length** (undefined)
+- **Thickness** (number)
+- **Length** (number)
 
 
 
 
  A molecule representing square steel tubing. Price in BOM is approximate for low carbon steel. 
 
-![readme](/readmeid-85.svg?v=jkixtt)
+![readme](/readmeid-85.svg?v=8mq475)
 
 
 
