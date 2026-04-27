@@ -9,7 +9,6 @@
 - **Width** (number)
 - **Thickness** (undefined)
 - **Length** (undefined)
-- **Input** (number)
 
 
 

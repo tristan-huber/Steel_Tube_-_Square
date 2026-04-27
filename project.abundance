@@ -19,10 +19,6 @@
       "name": "Length",
       "ioValue": 10,
       "currentEquation": "10"
-    },
-    {
-      "name": "Input",
-      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -219,8 +215,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5465494791666667,
-      "y": 0.8281461434370772,
+      "x": 0.5423177083333334,
+      "y": 0.713125845737483,
       "uniqueID": "id-48",
       "ioValues": [
         {
@@ -234,10 +230,55 @@
       ]
     },
     {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.912334755907151,
-      "uniqueID": "id-52"
+      "atomType": "Add-BOM-Tag",
+      "x": 0.7223307291666666,
+      "y": 0.36400541271989173,
+      "uniqueID": "id-59",
+      "name": "Add BOM Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Item Name",
+          "ioValue": "Square Steel Tubing (ft)",
+          "currentEquation": "Square Steel Tubing (ft)"
+        },
+        {
+          "name": "Number Needed",
+          "ioValue": 1
+        },
+        {
+          "name": "Cost (USD)",
+          "ioValue": 7.5
+        },
+        {
+          "name": "Source Link",
+          "ioValue": "https://www.mcmaster.com/products/square-tubing/steel-2~/",
+          "currentEquation": "https://www.mcmaster.com/products/square-tubing/steel-2~/"
+        }
+      ],
+      "BOMitem": {
+        "BOMitemName": "Square Steel Tubing (ft)",
+        "numberNeeded": 1,
+        "costUSD": 7.5,
+        "source": "https://www.mcmaster.com/products/square-tubing/steel-2~/"
+      }
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.5826822916666666,
+      "y": 0.38836265223274696,
+      "uniqueID": "id-66",
+      "name": "\"Steel Square Tube \" + x + \"ft\"",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 0
+        }
+      ],
+      "currentEquation": "\"Steel Square Tube \" + x + \"ft\""
     }
   ],
   "allConnectors": [
@@ -295,6 +336,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-48",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-48",
+      "ap2ID": "id-59"
     }
   ],
   "unitsKey": "Inches",
