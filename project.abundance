@@ -58,8 +58,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.37858072916666663,
-      "y": 0.6535859269282814,
+      "x": 0.33821614583333337,
+      "y": 0.44519621109607577,
       "uniqueID": "id-22",
       "name": "Offset_2D",
       "ioValues": [
@@ -199,8 +199,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.4733072916666667,
-      "y": 0.36535859269282817,
+      "x": 0.455078125,
+      "y": 0.2327469553450609,
       "uniqueID": "id-44",
       "ioValues": [
         {
@@ -215,8 +215,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5423177083333334,
-      "y": 0.713125845737483,
+      "x": 0.5110677083333334,
+      "y": 0.4181326116373478,
       "uniqueID": "id-48",
       "ioValues": [
         {
@@ -231,8 +231,8 @@
     },
     {
       "atomType": "Add-BOM-Tag",
-      "x": 0.7223307291666666,
-      "y": 0.36400541271989173,
+      "x": 0.6826171875,
+      "y": 0.7496617050067659,
       "uniqueID": "id-59",
       "name": "Add BOM Tag",
       "ioValues": [
@@ -242,7 +242,7 @@
         },
         {
           "name": "Item Name",
-          "ioValue": "Square Steel Tubing (ft)",
+          "ioValue": "Steel Square Tube 0.8333333333333334ft",
           "currentEquation": "Square Steel Tubing (ft)"
         },
         {
@@ -251,7 +251,7 @@
         },
         {
           "name": "Cost (USD)",
-          "ioValue": 7.5
+          "ioValue": 5.208333333333334
         },
         {
           "name": "Source Link",
@@ -260,25 +260,76 @@
         }
       ],
       "BOMitem": {
-        "BOMitemName": "Square Steel Tubing (ft)",
+        "BOMitemName": "Steel Square Tube 0.8333333333333334ft",
         "numberNeeded": 1,
-        "costUSD": 7.5,
+        "costUSD": 5.208333333333334,
         "source": "https://www.mcmaster.com/products/square-tubing/steel-2~/"
       }
     },
     {
       "atomType": "Equation",
-      "x": 0.5826822916666666,
-      "y": 0.38836265223274696,
+      "x": 0.44986979166666663,
+      "y": 0.652232746955345,
       "uniqueID": "id-66",
       "name": "\"Steel Square Tube \" + x + \"ft\"",
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 0
+          "ioValue": 0.8333333333333334
         }
       ],
       "currentEquation": "\"Steel Square Tube \" + x + \"ft\""
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.373046875,
+      "y": 0.6495263870094723,
+      "uniqueID": "id-74",
+      "name": "x / 12",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 10
+        }
+      ],
+      "currentEquation": "x / 12"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.43164062499999994,
+      "y": 0.8443843031123139,
+      "uniqueID": "id-78",
+      "name": "l * t * w * 100",
+      "ioValues": [
+        {
+          "name": "l",
+          "ioValue": 0.8333333333333334
+        },
+        {
+          "name": "t",
+          "ioValue": 0.0625
+        },
+        {
+          "name": "w",
+          "ioValue": 1
+        }
+      ],
+      "currentEquation": "l * t * w * 100"
+    },
+    {
+      "atomType": "Readme",
+      "x": 0.7216796875,
+      "y": 0.27604871447902574,
+      "uniqueID": "id-85",
+      "name": "README",
+      "ioValues": [
+        {
+          "name": "value",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "readMeText": "A molecule representing square steel tubing. Price in BOM is approximate for low carbon steel.",
+      "global": true
     }
   ],
   "allConnectors": [
@@ -286,6 +337,11 @@
       "ap2Name": "t",
       "ap1ID": "id-4",
       "ap2ID": "id-34"
+    },
+    {
+      "ap2Name": "w",
+      "ap1ID": "id-4",
+      "ap2ID": "id-78"
     },
     {
       "ap2Name": "Offset",
@@ -298,9 +354,19 @@
       "ap2ID": "id-34"
     },
     {
+      "ap2Name": "t",
+      "ap1ID": "id-7",
+      "ap2ID": "id-78"
+    },
+    {
       "ap2Name": "height",
       "ap1ID": "id-10",
       "ap2ID": "id-48"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-10",
+      "ap2ID": "id-74"
     },
     {
       "ap2Name": "geometry1",
@@ -333,13 +399,38 @@
       "ap2ID": "id-48"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "geometry",
       "ap1ID": "id-48",
+      "ap2ID": "id-59"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-59",
       "ap2ID": "id-2"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-48",
+      "ap2Name": "value",
+      "ap1ID": "id-59",
+      "ap2ID": "id-85"
+    },
+    {
+      "ap2Name": "Item Name",
+      "ap1ID": "id-66",
+      "ap2ID": "id-59"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-74",
+      "ap2ID": "id-66"
+    },
+    {
+      "ap2Name": "l",
+      "ap1ID": "id-74",
+      "ap2ID": "id-78"
+    },
+    {
+      "ap2Name": "Cost (USD)",
+      "ap1ID": "id-78",
       "ap2ID": "id-59"
     }
   ],

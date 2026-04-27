@@ -2,4 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Total: |0|$0.00| |
+|Steel Square Tube 0.8333333333333334ft|1|$5.21|https://www.mcmaster.com/products/square-tubing/steel-2~/|
+|Total: |1|$5.21| |
