@@ -194,8 +194,8 @@
     },
     {
       "atomType": "Readme",
-      "x": 0.7216796875,
-      "y": 0.27604871447902574,
+      "x": 0.8792317708333333,
+      "y": 0.2584573748308525,
       "uniqueID": "id-85",
       "name": "README",
       "ioValues": [
@@ -313,6 +313,51 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3779296875,
+      "y": 0.10825439783491203,
+      "uniqueID": "id-135",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Color",
+      "x": 0.5162760416666666,
+      "y": 0.14884979702300408,
+      "uniqueID": "id-142",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Keep Out"
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.8522135416666666,
+      "y": 0.530446549391069,
+      "uniqueID": "id-145",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -342,6 +387,11 @@
       "ap2ID": "id-74"
     },
     {
+      "ap2Name": "height",
+      "ap1ID": "id-10",
+      "ap2ID": "id-135"
+    },
+    {
       "ap2Name": "2D_Shape",
       "ap1ID": "id-40",
       "ap2ID": "id-22"
@@ -350,6 +400,11 @@
       "ap2Name": "geometry2",
       "ap1ID": "id-40",
       "ap2ID": "id-44"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-40",
+      "ap2ID": "id-135"
     },
     {
       "ap2Name": "geometry",
@@ -362,14 +417,9 @@
       "ap2ID": "id-59"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "Shape 2",
       "ap1ID": "id-59",
-      "ap2ID": "id-2"
-    },
-    {
-      "ap2Name": "value",
-      "ap1ID": "id-59",
-      "ap2ID": "id-85"
+      "ap2ID": "id-145"
     },
     {
       "ap2Name": "Item Name",
@@ -395,6 +445,26 @@
       "ap2Name": "geometry1",
       "ap1ID": "id-22",
       "ap2ID": "id-44"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-135",
+      "ap2ID": "id-142"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-142",
+      "ap2ID": "id-145"
+    },
+    {
+      "ap2Name": "value",
+      "ap1ID": "id-145",
+      "ap2ID": "id-85"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-145",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "Inches",
