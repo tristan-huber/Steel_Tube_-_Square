@@ -2,5 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Steel Square Tube 0.8333333333333334ft|1|$5.21|https://www.mcmaster.com/products/square-tubing/steel-2~/|
-|Total: |1|$5.21| |
+|Everbilt 14 Gauge Zinc-Plated Perforated Steel Square Tube|1|$0.00|https://www.homedepot.com/pep/Everbilt-1-in-x-3-ft-14-Gauge-Zinc-Plated-Perforated-Steel-Square-Tube-5206/332733453|
+|Total: |1|$0.00| |
