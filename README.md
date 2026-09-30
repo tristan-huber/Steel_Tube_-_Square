@@ -2,11 +2,11 @@
 
 # Steel_Tube_-_Square
 
-![](/project.svg)
+![](/project.png)
 
 ## Inputs
 
-- **Width** (number)
+- **Width** (dropdown)
 - **Thickness** (number)
 - **Length** (number)
 
@@ -15,7 +15,7 @@
 
  A molecule representing square steel tubing. Price in BOM is approximate for low carbon steel. 
 
-![readme](/readmeid-85.svg?v=evoq2y)
+![readme](/readmeid-85.svg?v=8mq475)
 
 
 
